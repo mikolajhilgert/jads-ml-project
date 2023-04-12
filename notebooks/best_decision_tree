@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Contract_Month-to-month <= 0.007\nentropy = 1.0\nsamples = 8294\nvalue = [4147, 4147]\nclass = No", fillcolor="#ffffff"] ;
+1 [label="InternetService_Fiber_optic <= 0.026\nentropy = 0.573\nsamples = 2723\nvalue = [2353, 370]\nclass = No", fillcolor="#e99558"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.338\nsamples = 1786\nvalue = [1674, 112]\nclass = No", fillcolor="#e78946"] ;
+1 -> 2 ;
+3 [label="entropy = 0.849\nsamples = 937\nvalue = [679, 258]\nclass = No", fillcolor="#efb184"] ;
+1 -> 3 ;
+4 [label="InternetService_Fiber_optic <= 0.013\nentropy = 0.907\nsamples = 5571\nvalue = [1794, 3777]\nclass = Yes", fillcolor="#97ccf1"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 1.0\nsamples = 2084\nvalue = [1022, 1062]\nclass = Yes", fillcolor="#f8fbfe"] ;
+4 -> 5 ;
+6 [label="entropy = 0.763\nsamples = 3487\nvalue = [772, 2715]\nclass = Yes", fillcolor="#71b9ec"] ;
+4 -> 6 ;
+}
